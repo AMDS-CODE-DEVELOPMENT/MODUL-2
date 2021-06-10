@@ -19,5 +19,8 @@ public class MahasiswaBeraksi {
         }
         mahasiswa.tampilkanAtribut();
         System.out.println(mahasiswa.hitungUsia());
+
+        Mahasiswa m = new Mahasiswa("19630001","Jaya",new Date());
+        m.tampilkanAtribut();
     }
 }

@@ -10,6 +10,16 @@ public class Mahasiswa {
     String nama;
     Date tanggallahir;
 
+    public Mahasiswa() {
+        System.out.println("Objek diciptakan");
+    }
+
+    public Mahasiswa(String npm, String nama, Date tanggallahir) {
+        this.npm = npm;
+        this.nama = nama;
+        this.tanggallahir = tanggallahir;
+    }
+
     void menyapa() {
         System.out.println("Hai nama aku : " + nama);
     }
