@@ -14,13 +14,9 @@ public class MahasiswaBeraksi {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(polaTanggal);
         try {
             mahasiswa.tanggallahir = simpleDateFormat.parse("09-23-2000");
-            System.out.println("Nama\t\t\t: "+mahasiswa.nama);
-            System.out.println("NPM\t\t\t\t: "+mahasiswa.npm);
-            System.out.println("Tanggal Lahir\t: "+simpleDateFormat.format(mahasiswa.tanggallahir));
-
-            mahasiswa.menyapa();
         } catch (ParseException e) {
             System.err.println("Format Tanggal Salah");
         }
+        mahasiswa.tampilkanAtribut();
     }
 }
