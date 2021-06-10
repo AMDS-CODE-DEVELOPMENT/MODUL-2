@@ -6,9 +6,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Mahasiswa {
-    String npm;
-    String nama;
-    Date tanggallahir;
+    private String npm;
+    private String nama;
+    private Date tanggallahir;
 
     public Mahasiswa() {
         System.out.println("Objek diciptakan");
@@ -26,6 +26,26 @@ public class Mahasiswa {
 
     String getNama(){
         return nama;
+    }
+
+    public String getNpm() {
+        return npm;
+    }
+
+    public void setNpm(String npm) {
+        this.npm = npm;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public Date getTanggallahir() {
+        return tanggallahir;
+    }
+
+    public void setTanggallahir(Date tanggallahir) {
+        this.tanggallahir = tanggallahir;
     }
 
     void tampilkanAtribut(){
