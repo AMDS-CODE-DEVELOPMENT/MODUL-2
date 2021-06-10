@@ -13,10 +13,11 @@ public class MahasiswaBeraksi {
         String polaTanggal = "dd-MM-yyyy";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(polaTanggal);
         try {
-            mahasiswa.tanggallahir = simpleDateFormat.parse("09-23-2000");
+            mahasiswa.tanggallahir = simpleDateFormat.parse("23-09-2000");
         } catch (ParseException e) {
             System.err.println("Format Tanggal Salah");
         }
         mahasiswa.tampilkanAtribut();
+        System.out.println(mahasiswa.hitungUsia());
     }
 }
